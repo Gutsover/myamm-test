@@ -1,0 +1,98 @@
+$logo-red: #bb0b0b;
+$body: #2d3436;
+$myWhite:#ffffff;
+$sidebar: #ffecb3;
+
+
+nav {
+    width: 13%;
+    height: 100vh;
+    background-color: $sidebar;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .container-sidenav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            font-variant: small-caps;
+            transition: all 0.8 ease;
+            text-decoration: none;
+            color: $body;
+            margin-top: 40px;
+
+            span {
+                margin-right: 20px;
+            }
+
+            svg {
+                width: 20px;
+            }
+        }
+
+        a:hover {
+            color: $logo-red;
+            svg path {
+                fill: $logo-red;
+            }
+        }
+        .active {
+            color: $logo-red;
+        }
+    }
+}
+
+//////////////////////////////
+///// @ LANDSCAPE ////////////
+/////////////////////////////
+
+@media (min-width: 300px) and (max-width: 1024px) and (orientation: landscape) {
+    nav {
+        width: 7%;
+        align-items: center;
+
+        header {
+            img {
+                width: 40px !important;
+            }
+        }
+
+        .container-sidenav {
+            a {
+                margin-top: 25px;
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////
+///// @ PORTRAIT ////////////
+/////////////////////////////
+
+
+@media (min-width: 300px) and (max-width: 1024px) {
+    nav {
+        align-items: center;
+
+        span {
+            display: none;
+        }
+    }
+}

@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+$body: #2d3436;
+$myWhite:#ffffff;
+
+body {
+    background-color: $body;
+    color: $myWhite;
+}/* You can add global styles to this file, and also import other style files */

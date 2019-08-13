@@ -1,0 +1,35 @@
+$logo-red: #bb0b0b;
+$body: #2d3436;
+$myWhite:#ffffff;
+$sidebar: #ffecb3;
+
+.padd {
+    padding: 15px;
+}
+
+.card {
+    width: 40%;
+    height: 200px;
+    background-color: $sidebar;
+
+    .header-card {
+        background-color: $myWhite;
+        border-radius: 3px;
+
+        h4 {
+            color: $body;
+            text-align: center;
+        }
+
+        .container-card {
+
+            form {
+
+                .input-first,
+                .input-second {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
