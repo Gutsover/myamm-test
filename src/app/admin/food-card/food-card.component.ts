@@ -7,12 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodCardComponent implements OnInit {
 
-  titleCard = 'Ajouter un plat';
-  titlePlace = 'Nom du plat';
+
+  btnText: string = 'Ajouter';
+  nameMeal: string = 'test';
+  meals = [];
+  priceMeal: string  = '12';
+  prices = [];
 
   constructor() { }
 
   ngOnInit() {
   }
+  addItem() {
+    this.meals.push(this.nameMeal);
+    this.nameMeal = '';
+
+    this.prices.push(this.priceMeal);
+    this.priceMeal = '';
+
+    }
 
 }

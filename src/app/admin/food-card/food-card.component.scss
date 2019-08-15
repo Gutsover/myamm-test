@@ -8,28 +8,13 @@ $sidebar: #ffecb3;
 }
 
 .card {
-    width: 40%;
-    height: 200px;
-    background-color: $sidebar;
+    width: 40%;    
+    background-color: $myWhite;
 
-    .header-card {
-        background-color: $myWhite;
-        border-radius: 3px;
-
-        h4 {
-            color: $body;
-            text-align: center;
-        }
-
-        .container-card {
-
-            form {
-
-                .input-first,
-                .input-second {
-                    margin-right: 15px;
-                }
-            }
-        }
+    .container-meal {
+        color: $body;
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
     }
 }

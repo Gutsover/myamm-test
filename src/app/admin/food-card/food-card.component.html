@@ -1,17 +1,38 @@
-<div class="card padd">
-    <header class="header-card padd">
-        <h4>{{ titleCard }}</h4>
-    </header>
-    <section class="container-card padd">
-        <form action="" method="">
+<!-- COMPONENT CONTAINER DES 2 FUTURS COMPONENT -->
+<div class="card">
 
-            <input class="input-first" type="text" placeholder="{{ titlePlace }}">
+  <input type="submit" class="btn btn-dark" value="{{ btnText }}" (click)="addItem()" />
 
-            <input class="input-second" type="text" placeholder="9.99€">
+<!-- FUTUR COMPONENT APP-CARD-HEADER -->
+  <div class="container-input padd">
+    <input
+      type="text"
+      class="txt"
+      name="item"
+      placeholder="Nom du plat"
+      [(ngModel)]="nameMeal"
+    />
 
-            <button type="submit">Ajouter</button>
+    <input
+      type="text"
+      class="txt"
+      name="item"
+      placeholder="9.99"
+      [(ngModel)]="priceMeal"
+    />
+  </div>
 
-        </form>
+  <!-- FUTUR COMPONENT APP-CARD-AFFICHAGE -->
+  <div class="container-meal padd">
 
-    </section>
+    <div class="name-meal">
+      <p class="life-container" *ngFor="let meal of meals">{{ meal }}</p>
+    </div>
+
+    <div class="price-meal">
+      <p *ngFor="let price of prices">{{ price }}</p>
+    </div>
+
+  </div>
+
 </div>
