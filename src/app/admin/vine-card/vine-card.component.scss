@@ -1,0 +1,42 @@
+$logo-red: #bb0b0b;
+$body: #2d3436;
+$myWhite:#ffffff;
+$sidebar: #ffecb3;
+
+.padd {
+    padding: 15px;
+}
+
+.card {
+    width: 400px;
+    background-color: $myWhite;
+    margin: 5%;
+
+    h2 {
+        color: $logo-red;
+        text-align: center;
+    }
+
+    .validate {
+        width: 60%;
+        margin: auto;
+    }
+
+    .header-card {
+        margin: auto;
+    }
+
+    section {
+        color: $body;
+        display: flex;
+        justify-content: space-around;
+
+        .affichage {
+            margin-bottom: 0px;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
