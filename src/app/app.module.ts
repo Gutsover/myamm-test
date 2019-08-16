@@ -18,6 +18,7 @@ import { FoodCardComponent } from './admin/food-card/food-card.component';
 import { EntreeCardComponent } from './admin/entree-card/entree-card.component';
 import { MenuCardComponent } from './admin/menu-card/menu-card.component';
 import { DessertCardComponent } from './admin/dessert-card/dessert-card.component';
+import { DigestiveCardComponent } from './admin/digestive-card/digestive-card.component';
 
 
 // Création de mes routes:
@@ -45,7 +46,8 @@ const routes: Routes = [
     FoodCardComponent,
     EntreeCardComponent,
     MenuCardComponent,
-    DessertCardComponent
+    DessertCardComponent,
+    DigestiveCardComponent
   ],
 
   // Imports: importe les autres modules utiles à l'appli
