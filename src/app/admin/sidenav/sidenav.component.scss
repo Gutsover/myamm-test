@@ -9,6 +9,10 @@ $sidebar: #ffecb3;
 nav {
     width: 13%;
     height: 100vh;
+    //position: fixed;
+    // top: 0;
+    // left: 0;
+    padding-top: 20px;
     background-color: black;
     border-right: 2px solid $logo-red;
     display: flex;
