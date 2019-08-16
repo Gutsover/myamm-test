@@ -9,6 +9,7 @@ nav {
     height: 100vh;
     background-color: black;
     padding: 15px;
+    border-right: 2px solid $logo-red;
     display: flex;
     flex-direction: column;
 
@@ -31,7 +32,7 @@ nav {
             font-variant: small-caps;
             transition: all 0.8 ease;
             text-decoration: none;
-            color: $body;
+            color: $myWhite;
             margin-top: 40px;
 
             span {
