@@ -8,9 +8,10 @@ $sidebar: #ffecb3;
 }
 
 .card {
-    width: 350px;
+    width: 500px;
     background-color: $myWhite;
-
+    overflow: hidden;
+    hyphens: auto;
     h2 {
         color: $logo-red;
         text-align: center;

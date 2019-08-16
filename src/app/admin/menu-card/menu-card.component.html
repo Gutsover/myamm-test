@@ -5,7 +5,7 @@
     class="btn btn-dark validate"
     value="{{ btnText }}"
     (click)="addItem()"
-    [disabled]="!(nameEntree && priceEntree)"
+    [disabled]="!(nameMenu && priceMenu)"
   />
 
   <!-- HEADER -->
@@ -14,9 +14,9 @@
       type="text"
       class="txt"
       name="item"
-      placeholder="Nom de l'entrée"
+      placeholder="Entrée, plat, dessert..."
       style="width:80%"
-      [(ngModel)]="nameEntree"
+      [(ngModel)]="nameMenu"
     />
 
     <input
@@ -25,17 +25,17 @@
       name="item"
       placeholder="9.99"
       style="width: 20%"
-      [(ngModel)]="priceEntree"
+      [(ngModel)]="priceMenu"
     />
   </div>
 
   <!-- AFFICHAGE -->
   <section class="container-meal padd">
-    <div class="affichage name-entree">
-      <p class="life-container" *ngFor="let entree of entrees">{{ entree }}</p>
+    <div class="affichage name-Menu">
+      <p class="life-container" *ngFor="let Menu of Menus">{{ Menu }}</p>
     </div>
 
-    <div class="affichage price-entree">
+    <div class="affichage price-Menu">
       <p *ngFor="let price of prices">{{ price }} €</p>
     </div>
     <!-- <button type="reset" class="btn btn-danger">X</button> -->

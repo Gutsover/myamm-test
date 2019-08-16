@@ -29,5 +29,13 @@ $sidebar: #ffecb3;
         color: $body;
         display: flex;
         justify-content: space-around;
+
+        .affichage {
+            margin-bottom: 0px;
+
+            p {
+                margin-bottom: 0px;
+            }
+        }
     }
 }
