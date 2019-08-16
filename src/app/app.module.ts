@@ -25,6 +25,7 @@ import { BeerCardComponent } from './admin/beer-card/beer-card.component';
 import { VineCardComponent } from './admin/vine-card/vine-card.component';
 import { CoktailCardComponent } from './admin/coktail-card/coktail-card.component';
 import { SoftCardComponent } from './admin/soft-card/soft-card.component';
+import { CoktailSoftCardComponent } from './admin/coktail-soft-card/coktail-soft-card.component';
 
 
 // Création de mes routes:
@@ -59,7 +60,8 @@ const routes: Routes = [
     BeerCardComponent,
     VineCardComponent,
     CoktailCardComponent,
-    SoftCardComponent
+    SoftCardComponent,
+    CoktailSoftCardComponent
   ],
 
   // Imports: importe les autres modules utiles à l'appli
