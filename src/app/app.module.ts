@@ -15,7 +15,7 @@ import { ViewSoftComponent } from './admin/view-soft/view-soft.component';
 
 import { Routes, RouterModule} from '@angular/router';
 import { FoodCardComponent } from './admin/food-card/food-card.component';
-
+import { EntreeCardComponent } from './admin/entree-card/entree-card.component';
 
 
 // Création de mes routes:
@@ -40,7 +40,8 @@ const routes: Routes = [
     ViewDessertComponent,
     ViewAlcoolComponent,
     ViewSoftComponent,
-    FoodCardComponent
+    FoodCardComponent,
+    EntreeCardComponent
   ],
 
   // Imports: importe les autres modules utiles à l'appli

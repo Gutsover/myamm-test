@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodCardComponent implements OnInit {
 
-
+  titleCard: string = 'Les plats';
   btnText: string = 'Ajouter';
   nameMeal: string = 'test';
   meals = [];

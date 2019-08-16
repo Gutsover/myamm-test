@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewMealComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
