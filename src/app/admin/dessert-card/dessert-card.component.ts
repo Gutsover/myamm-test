@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DessertCardComponent implements OnInit {
 
-  titleCard: string = 'Les desserts';
+  titleCard: string = 'Desserts';
   btnText: string = 'Ajouter';
-  nameDessert: string = 'test';
+  nameDessert: string;
   desserts = [];
-  priceDessert: string  = '12';
+  priceDessert: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class DessertCardComponent implements OnInit {
     this.nameDessert = '';
 
     this.prices.push(this.priceDessert);
-    this.priceDessert = '';
+    // this.priceDessert = '';
 
     }
 

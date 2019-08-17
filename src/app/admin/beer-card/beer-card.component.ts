@@ -9,9 +9,9 @@ export class BeerCardComponent implements OnInit {
 
   titleCard: string = 'Bières';
   btnText: string = 'Ajouter';
-  nameBeer: string = 'test';
+  nameBeer: string;
   beers = [];
-  priceBeer: string  = '12';
+  priceBeer: number;
   prices = [];
 
   constructor() { }
@@ -20,10 +20,10 @@ export class BeerCardComponent implements OnInit {
   }
   addItem() {
     this.beers.push(this.nameBeer);
-    this.nameBeer = '';
+    // this.nameBeer = '';
 
     this.prices.push(this.priceBeer);
-    this.priceBeer = '';
+    // this.priceBeer = '';
 
     }
 

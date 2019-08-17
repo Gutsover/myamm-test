@@ -9,9 +9,9 @@ export class SoftCardComponent implements OnInit {
 
   titleCard: string = 'Boissons sans alcool';
   btnText: string = 'Ajouter';
-  nameSoft: string = 'test';
+  nameSoft: string;
   softs = [];
-  priceSoft: string  = '12';
+  priceSoft: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class SoftCardComponent implements OnInit {
     this.nameSoft = '';
 
     this.prices.push(this.priceSoft);
-    this.priceSoft = '';
+    // this.priceSoft = '';
 
     }
 

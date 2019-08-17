@@ -9,9 +9,9 @@ export class CoktailCardComponent implements OnInit {
 
   titleCard: string = 'Coktails';
   btnText: string = 'Ajouter';
-  nameCoktail: string = 'test';
+  nameCoktail: string;
   coktails = [];
-  priceCoktail: string  = '12';
+  priceCoktail: number;
   prices = [];
 
   constructor() { }
@@ -20,10 +20,10 @@ export class CoktailCardComponent implements OnInit {
   }
   addItem() {
     this.coktails.push(this.nameCoktail);
-    this.nameCoktail = '';
+    // this.nameCoktail = '';
 
     this.prices.push(this.priceCoktail);
-    this.priceCoktail = '';
+    // this.priceCoktail = '';
 
     }
 

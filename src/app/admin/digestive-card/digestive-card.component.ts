@@ -9,9 +9,9 @@ export class DigestiveCardComponent implements OnInit {
 
   titleCard: string = 'Digestifs';
   btnText: string = 'Ajouter';
-  nameDigestive: string = 'test';
+  nameDigestive: string;
   digestives = [];
-  priceDigestive: string  = '12';
+  priceDigestive: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class DigestiveCardComponent implements OnInit {
     this.nameDigestive = '';
 
     this.prices.push(this.priceDigestive);
-    this.priceDigestive = '';
+    // this.priceDigestive = '';
 
     }
 

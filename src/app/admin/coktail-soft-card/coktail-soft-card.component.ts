@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoktailSoftCardComponent implements OnInit {
 
-  titleCard: string = 'Coktails sans alcool';
+  titleCard: string = 'Coktails sans Alcool';
   btnText: string = 'Ajouter';
-  nameCoktailSoft: string = 'test';
+  nameCoktailSoft: string;
   coktailSofts = [];
-  priceCoktailSoft: string  = '12';
+  priceCoktailSoft: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class CoktailSoftCardComponent implements OnInit {
     this.nameCoktailSoft = '';
 
     this.prices.push(this.priceCoktailSoft);
-    this.priceCoktailSoft = '';
+    // this.priceCoktailSoft = '';
 
     }
 

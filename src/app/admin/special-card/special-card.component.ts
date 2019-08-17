@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpecialCardComponent implements OnInit {
 
-  titleCard: string = 'Plat du jour';
+  titleCard: string = 'Plat(s) du Jour';
   btnText: string = 'Ajouter';
-  nameSpecial: string = 'test';
+  nameSpecial: string;
   specials = [];
-  priceSpecial: string  = '12';
+  priceSpecial: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class SpecialCardComponent implements OnInit {
     this.nameSpecial = '';
 
     this.prices.push(this.priceSpecial);
-    this.priceSpecial = '';
+    // this.priceSpecial = '';
 
     }
 

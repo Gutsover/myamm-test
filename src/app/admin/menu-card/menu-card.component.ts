@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuCardComponent implements OnInit {
 
-  titleCard: string = 'Menus proposés';
+  titleCard: string = 'Menus Proposés';
   btnText: string = 'Ajouter';
-  nameMenu: string = 'test';
+  nameMenu: string;
   Menus = [];
-  priceMenu: string  = '12';
+  priceMenu: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class MenuCardComponent implements OnInit {
     this.nameMenu = '';
 
     this.prices.push(this.priceMenu);
-    this.priceMenu = '';
+    // this.priceMenu = '';
 
     }
 

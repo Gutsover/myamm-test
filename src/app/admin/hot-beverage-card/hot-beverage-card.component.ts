@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HotBeverageCardComponent implements OnInit {
 
-  titleCard: string = 'Boissons chaudes';
+  titleCard: string = 'Boissons Chaudes';
   btnText: string = 'Ajouter';
-  nameHotBeverage: string = 'test';
+  nameHotBeverage: string;
   hotBeverages = [];
-  priceHotBeverage: string  = '12';
+  priceHotBeverage: number;
   prices = [];
 
   constructor() { }
@@ -23,7 +23,7 @@ export class HotBeverageCardComponent implements OnInit {
     this.nameHotBeverage = '';
 
     this.prices.push(this.priceHotBeverage);
-    this.priceHotBeverage = '';
+    // this.priceHotBeverage = '';
 
     }
 

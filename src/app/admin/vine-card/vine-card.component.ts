@@ -9,9 +9,9 @@ export class VineCardComponent implements OnInit {
 
   titleCard: string = 'Vins';
   btnText: string = 'Ajouter';
-  nameVine: string = 'test';
+  nameVine: string;
   vines = [];
-  priceVine: string  = '12';
+  priceVine: number;
   prices = [];
 
   constructor() { }
@@ -20,10 +20,10 @@ export class VineCardComponent implements OnInit {
   }
   addItem() {
     this.vines.push(this.nameVine);
-    this.nameVine = '';
+    // this.nameVine = '';
 
     this.prices.push(this.priceVine);
-    this.priceVine = '';
+    // this.priceVine = '';
 
     }
 
