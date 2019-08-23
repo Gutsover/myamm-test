@@ -27,10 +27,12 @@ import { CoktailCardComponent } from './admin/coktail-card/coktail-card.componen
 import { SoftCardComponent } from './admin/soft-card/soft-card.component';
 import { CoktailSoftCardComponent } from './admin/coktail-soft-card/coktail-soft-card.component';
 import { AperitifCardComponent } from './admin/aperitif-card/aperitif-card.component';
+import { ProfilCardDashboardComponent } from './admin/profil-card-dashboard/profil-card-dashboard.component';
 
 
 // Création de mes routes:
 const routes: Routes = [
+  { path: '', component: HomeConnexionComponent},
   { path: 'dashboard', component: ViewDashboardComponent},
   { path: 'plats', component: ViewMealComponent},
   { path: 'desserts', component: ViewDessertComponent},
@@ -63,7 +65,8 @@ const routes: Routes = [
     CoktailCardComponent,
     SoftCardComponent,
     CoktailSoftCardComponent,
-    AperitifCardComponent
+    AperitifCardComponent,
+    ProfilCardDashboardComponent
   ],
 
   // Imports: importe les autres modules utiles à l'appli
