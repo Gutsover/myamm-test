@@ -1,0 +1,13 @@
+<app-sidebar></app-sidebar>
+
+<!-- Info: var entre crochets: liaison avec les var du c parent (en l'occurence vieawMeal).
+Sans crochets: appelle les var du fichier .ts -->
+
+<div class="container-page fixed-right">
+
+    <app-meal-card *ngFor="let meal of meals"
+                    [mealType]="meal.type"
+                    [mealPlaceHolder]="meal.placeHolder"></app-meal-card>
+
+</div>
+

@@ -1,0 +1,34 @@
+<div class="card">
+    <header class="header-card padd">
+        <h3>{{ mealType }}</h3>
+         <button type="submit" class="btn btn-light validate" value="Ajouter" (click)="addItem()" [disabled]="!(mealName && mealPrice)">Ajouter</button>
+    </header>
+
+    <section class="padd">
+        <input type="text"
+               placeholder="{{ mealPlaceHolder }}"
+               style="width:80%"
+               [(ngModel)]="mealName">
+
+        <input type="text"
+               placeholder="9.99"
+               style="width:20%"
+               [(ngModel)]="mealPrice">
+    </section>
+
+    <!-- AFFICHAGE -->
+    <article class="padd meal-list">
+
+        <div class="name-meal">
+            <p class="name" *ngFor="let meal of meals">{{ meal }}</p>
+        </div>
+
+        <div class="price-meal">
+            <p *ngFor="let price of prices">{{ price }} €</p>
+        </div>
+
+    </article>
+
+
+
+</div>

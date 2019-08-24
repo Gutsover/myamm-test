@@ -1,0 +1,8 @@
+<app-sidebar></app-sidebar>
+<div class="container-page fixed-right">
+  <app-meal-card
+    *ngFor="let meal of meals"
+    [mealType]="meal.type"
+    [mealPlaceHolder]="meal.placeHolder"
+  ></app-meal-card>
+</div>
