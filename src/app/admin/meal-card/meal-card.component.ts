@@ -7,13 +7,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MealCardComponent implements OnInit {
 
+  // Variables propre aux components, ne peut pas être modifié
   @Input() mealType: string;
   @Input() mealPlaceHolder: string;
 
+  // Ce que renseigne l'admin, ne peux pas être modifié
   @Input() mealName: string;
   @Input() meals = [];
   @Input() mealPrice: number;
   @Input() prices = [];
+
+  // @Input() indexOfMeal: number;
 
   constructor() { }
 

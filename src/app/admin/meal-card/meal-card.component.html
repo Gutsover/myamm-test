@@ -24,7 +24,11 @@
         </div>
 
         <div class="price-meal">
-            <p *ngFor="let price of prices">{{ price }} €</p>
+            <p *ngFor="let price of prices">{{ price }} €
+                <button class="btn btn-danger" type="submit" >
+                    X
+                </button>
+            </p>
         </div>
 
     </article>
