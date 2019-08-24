@@ -10,10 +10,10 @@ export class MealCardComponent implements OnInit {
   @Input() mealType: string;
   @Input() mealPlaceHolder: string;
 
-  mealName: string;
-  meals = [];
-  mealPrice: number;
-  prices = [];
+  @Input() mealName: string;
+  @Input() meals = [];
+  @Input() mealPrice: number;
+  @Input() prices = [];
 
   constructor() { }
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AlcoolService } from '../../services/alcool.service';
+
 
 @Component({
   selector: 'app-view-alcool',
@@ -7,29 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewAlcoolComponent implements OnInit {
 
-  meals = [
-    {
-        type: 'Bière',
-        placeHolder: 'Nom de la bière'
-    },
-    {
-        type: 'Coktail',
-        placeHolder: 'Nom du coktail'
-    },
-    {
-        type: 'Vin',
-        placeHolder: 'Nom du vin'
-    },
-    {
-        type: 'Apéritif',
-        placeHolder: 'Nom de l apéritif'
-    }
-  ];
+  meals = [];
 
-
-  constructor() { }
+  constructor(private alcoolService: AlcoolService) { }
 
   ngOnInit() {
+    this.meals = this.alcoolService.meals;
   }
 
 }

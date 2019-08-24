@@ -7,30 +7,12 @@ import { MealService } from '../../services/meal.service';
   styleUrls: ['./view-meal.component.scss']
 })
 export class ViewMealComponent implements OnInit {
+  meals: any[];
+  // On injecte le service dans le constructor puis on implément le OnInit, création de la méthosde ngOnInit
+  constructor(private mealService: MealService) { }
 
-
-  meals = [
-    {
-        type: 'Plat',
-        placeHolder: 'Nom du plat'
-    },
-    {
-        type: 'Entrée',
-        placeHolder: 'Nom de l entrée'
-    },
-    {
-        type: 'Menu',
-        placeHolder: 'entrée, plat, dessert...'
-    },
-    {
-        type: 'Plat du Jour',
-        placeHolder: 'entrée, plat, dessert...'
-    }
-  ];
-
-  constructor() { }
-// private mealService: MealService
   ngOnInit() {
+    this.meals = this.mealService.meals;
   }
 
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DessertService } from '../../services/dessert.service';
+
 
 @Component({
   selector: 'app-view-dessert',
@@ -7,25 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewDessertComponent implements OnInit {
 
-  meals = [
-    {
-        type: 'Dessert',
-        placeHolder: 'Nom du dessert'
-    },
-    {
-        type: 'Digestif',
-        placeHolder: 'Nom du digestif'
-    },
-    {
-        type: 'Boisson chaude',
-        placeHolder: 'Nom de la boisson chaude'
-    }
-  ];
+  meals = [];
 
-
-  constructor() { }
+  constructor(private dessertService: DessertService) { }
 
   ngOnInit() {
+    this.meals = this.dessertService.meals;
   }
 
 }

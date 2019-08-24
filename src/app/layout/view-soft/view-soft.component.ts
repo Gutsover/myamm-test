@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SoftService } from 'src/app/services/soft.service';
 
 @Component({
   selector: 'app-view-soft',
@@ -7,21 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewSoftComponent implements OnInit {
 
-  meals = [
-    {
-        type: 'Boisson sans Alcool',
-        placeHolder: 'Nom de la boisson'
-    },
-    {
-        type: 'Coktail sans Alcool',
-        placeHolder: 'Nom du coktail'
-    }
-  ];
+  meals = [];
 
-
-  constructor() { }
+  constructor(private softService: SoftService) { }
 
   ngOnInit() {
+    this.meals = this.softService.meals;
   }
 
 }
