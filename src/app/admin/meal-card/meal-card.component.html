@@ -1,10 +1,17 @@
+<!-- Div container de mon component : -->
 <div class="card">
+
+    <!-- Le Header rassemble le H3 appelé dans le ts et le btn de validation des input qui suivront -->
     <header class="header-card padd">
         <h3>{{ mealType }}</h3>
          <button type="submit" class="btn btn-light validate" value="Ajouter" (click)="addItem()" [disabled]="!(mealName && mealPrice)">Ajouter</button>
     </header>
 
+    <!-- La class "padd" est just pour le css, indique un padding de 15px -->
+    <!-- ma section contient les input "mealName" et "mealPrice", modifiés appelés dans le ts pour chaque card -->
     <section class="padd">
+        <!-- placeholder => Interpolation -->
+        <!-- ngModel: va chercher ce que l'admin rempli dans les champs input -->
         <input type="text"
                placeholder="{{ mealPlaceHolder }}"
                style="width:80%"
@@ -16,23 +23,23 @@
                [(ngModel)]="mealPrice">
     </section>
 
-    <!-- AFFICHAGE -->
+    <!-- AFFICHAGE de ce que l'admin rentre dans les input : -->
     <article class="padd meal-list">
 
+        <!-- ngFor => boucle pour afficher tous les items que l'admin enregistrera -->
         <div class="name-meal">
             <p class="name" *ngFor="let meal of meals">{{ meal }}</p>
         </div>
 
         <div class="price-meal">
             <p *ngFor="let price of prices">{{ price }} €
-                <button class="btn btn-danger" type="submit" >
-                    X
+
+                <!-- btn de suppression d'un item (ne fonctionne pas encore) -->
+                <button class="btn btn-danger" style="height: 1.3em; width:1.3em;" type="submit" >
+                    x
                 </button>
             </p>
         </div>
 
     </article>
-
-
-
 </div>

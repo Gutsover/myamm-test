@@ -24,6 +24,7 @@ export class MealCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  // Method du btn addItem pour envoi des données des input dans l'affichage
   addItem() {
     this.meals.push(this.mealName);
     this.mealName = '';
