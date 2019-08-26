@@ -9,7 +9,7 @@ export class DessertService {
             placeHolder: 'Nom du digestif'
         },
         {
-            type: 'Boisson chaude',
+            type: 'Boisson Chaude',
             placeHolder: 'Nom de la boisson chaude'
         }
     ];

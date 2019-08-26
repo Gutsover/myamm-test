@@ -14,21 +14,25 @@ import { ViewDashboardComponent } from './layout/view-dashboard/view-dashboard.c
 import { ViewDessertComponent } from './layout/view-dessert/view-dessert.component';
 import { ViewAlcoolComponent } from './layout/view-alcool/view-alcool.component';
 import { ViewSoftComponent } from './layout/view-soft/view-soft.component';
+import { ViewUserComponent } from './layout/view-user/view-user.component';
+import { ModalCardComponent } from './user/modal-card/modal-card.component';
 
 // Import des Services:
 import { MealService } from './services/meal.service';
 import { DessertService } from './services/dessert.service';
 import { AlcoolService } from './services/alcool.service';
 import { SoftService } from './services/soft.service';
+import { UserFoodService } from './services/user-food.service';
 
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
-  // { path: 'dashboard', component: ViewDashboardComponent},
+  { path: 'dashboard', component: ViewDashboardComponent},
   { path: 'plats', component: ViewMealComponent},
   { path: 'desserts', component: ViewDessertComponent},
   { path: 'alcool', component: ViewAlcoolComponent},
-  { path: 'soft', component: ViewSoftComponent}
+  { path: 'soft', component: ViewSoftComponent},
+  { path: 'user', component: ViewUserComponent}
 ];
 
 @NgModule({
@@ -41,7 +45,9 @@ const routes: Routes = [
     ViewDashboardComponent,
     ViewDessertComponent,
     ViewAlcoolComponent,
-    ViewSoftComponent
+    ViewSoftComponent,
+    ViewUserComponent,
+    ModalCardComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +59,8 @@ const routes: Routes = [
     MealService,
     DessertService,
     AlcoolService,
-    SoftService
+    SoftService,
+    UserFoodService
   ],
   bootstrap: [AppComponent]
 })
