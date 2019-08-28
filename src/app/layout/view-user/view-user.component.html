@@ -1,17 +1,43 @@
 <div class="container">
 
-    <label for="number-table">Table n° : </label>
-    <select id="number-table">
+  <div class="select-table-couvert">
+    <div class="table">
+      <label for="number-table">Table n° </label>
+
+      <select id="number-table mySelect">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-    </select>
-<div class="card-list">
-  <app-modal-card
-    *ngFor="let food of foods"
-    [foodType]="food.type"
-  ></app-modal-card>
+      </select>
+    </div>
+
+    <div class="couvert">
+      <label for="number-couvert">Couvert(s)</label>
+
+      <select id="number-couvert mySelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+  </div>
+
+
+
+    <div class="card-list">
+      <app-modal-card
+        *ngFor="let food of foods"
+        [foodType]="food.type"
+      ></app-modal-card>
+    </div>
+
+
+<div class="buttons fixed-bottom">
+    <button class="btn btn-primary" value="Résumé">Résumé de la Commande</button>
+    <button class="btn btn-success" value="Valider">Valider la Commande</button>
 </div>
 </div>

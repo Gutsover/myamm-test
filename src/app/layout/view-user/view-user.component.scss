@@ -5,3 +5,32 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+label {
+    color: white;
+    font-size: 1.3em;
+}
+
+
+option {
+    font-size: 1.5em;
+}
+
+.select-table-couvert {
+    display: flex;
+    justify-content: space-between;
+
+    .table, .couvert {
+        display: flex;
+    }
+
+    .mySelect {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
