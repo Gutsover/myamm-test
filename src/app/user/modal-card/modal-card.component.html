@@ -1,9 +1,62 @@
 <!-- Dans la modale : -->
-
-  <div class="modal"></div>
-
-  <!-- Ouverture de la modale: -->
-  <a class="card">
-    <h4>{{ foodType }}</h4>
+<!-- <div id="modal" class="cModal">
+  <a id="closedModal" (click)="closeModal();">
+    X
   </a>
 
+  <div class="itemAdd">
+
+  </div>
+
+</div> -->
+
+<!-- Ouverture de la modale: -->
+<div class="card">
+  <a data-toggle="modal" data-target="#exampleModal">
+    <h4>{{ foodType }}</h4>
+  </a>
+</div>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h5>Cassolette de saint-Jacque</h5>
+
+        <div class="lessOrMore">
+          <a class="more">+</a>
+
+          <span>0</span>
+
+          <a class="less">-</a>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <textarea name="comment" id="" cols="30" rows="1"></textarea
+        >
+      </div>
+    </div>
+  </div>
+</div>
