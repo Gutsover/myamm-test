@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Routes, RouterModule} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,8 @@ import { ViewAlcoolComponent } from './layout/view-alcool/view-alcool.component'
 import { ViewSoftComponent } from './layout/view-soft/view-soft.component';
 import { ViewUserComponent } from './layout/view-user/view-user.component';
 import { ModalCardComponent } from './user/modal-card/modal-card.component';
+import { CreateUserCardComponent } from './admin/create-user-card/create-user-card.component';
+import { AddUserComponent } from './layout/add-user/add-user.component';
 
 // Import des Services:
 import { MealService } from './services/meal.service';
@@ -24,6 +26,7 @@ import { AlcoolService } from './services/alcool.service';
 import { SoftService } from './services/soft.service';
 import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
+import { UtilisateurService } from './services/utilisateur.service';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -32,6 +35,7 @@ const routes: Routes = [
   { path: 'desserts', component: ViewDessertComponent},
   { path: 'alcool', component: ViewAlcoolComponent},
   { path: 'soft', component: ViewSoftComponent},
+  { path: 'new-user', component: AddUserComponent},
   { path: 'user', component: ViewUserComponent}
 ];
 
@@ -47,12 +51,15 @@ const routes: Routes = [
     ViewAlcoolComponent,
     ViewSoftComponent,
     ViewUserComponent,
-    ModalCardComponent
+    ModalCardComponent,
+    CreateUserCardComponent,
+    AddUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [
@@ -61,7 +68,8 @@ const routes: Routes = [
     AlcoolService,
     SoftService,
     UserFoodService,
-    AuthService
+    AuthService,
+    UtilisateurService
   ],
   bootstrap: [AppComponent]
 })

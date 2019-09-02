@@ -1,0 +1,23 @@
+<div>
+  <form [formGroup]="utilisateurForm" (ngSubmit)="onSubmitForm()">
+    <div class="form-group">
+      <label for="name">Identifiant</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+
+    <div class="form-group">
+      <label for="role">Rôle</label>
+      <select class="form-control" id="role" formControlName="role">
+        <option value="admin">admin</option>
+        <option value="user">user</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Mot de Passe</label>
+      <input type="text" class="form-control" id="password" formControlName="password">
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="utilisateurForm.invalid">Créer</button>
+  </form>
+</div>
