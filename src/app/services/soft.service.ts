@@ -5,8 +5,8 @@ export class SoftService {
             placeHolder: 'Nom de la boisson'
         },
         {
-            type: 'Coktail sans Alcool',
-            placeHolder: 'Nom du coktail'
+            type: 'Cocktail sans Alcool',
+            placeHolder: 'Nom du cocktail'
         }
     ];
 }

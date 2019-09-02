@@ -5,8 +5,8 @@ export class AlcoolService {
             placeHolder: 'Nom de la bière'
         },
         {
-            type: 'Coktail',
-            placeHolder: 'Nom du coktail'
+            type: 'Cocktail',
+            placeHolder: 'Nom du cocktail'
         },
         {
             type: 'Vin',
