@@ -1,9 +1,10 @@
 <div class="card">
-  <h3>Collaborateurs</h3>
+  <h3>Collaborateur(s)</h3>
+  <hr>
   <a routerLink="/new-user" routerLinkActive="active"> Ajouter un nouvel utilisateur</a>
-
+  <hr>
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let utilisateur of utilisateurs">
+    <li *ngFor="let utilisateur of utilisateurs">
       <p class="userName">{{ utilisateur.name }}</p>
       <p class="role">{{ utilisateur.role }} </p>
     </li>

@@ -1,4 +1,23 @@
-li {
-    display: flex;
-    justify-content: space-around;
+.card {
+    width: 360px;
+
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: #640035;
+    }
+
+    a:hover {
+        color: #AA0023;
+        font-weight: bold;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-around;
+    }
 }
