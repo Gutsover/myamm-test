@@ -23,7 +23,7 @@ import { DessertService } from './services/dessert.service';
 import { AlcoolService } from './services/alcool.service';
 import { SoftService } from './services/soft.service';
 import { UserFoodService } from './services/user-food.service';
-
+import { AuthService } from './services/auth.service';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -60,7 +60,8 @@ const routes: Routes = [
     DessertService,
     AlcoolService,
     SoftService,
-    UserFoodService
+    UserFoodService,
+    AuthService
   ],
   bootstrap: [AppComponent]
 })
