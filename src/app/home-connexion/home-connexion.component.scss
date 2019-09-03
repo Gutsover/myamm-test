@@ -23,13 +23,15 @@ header {
         input {
             margin-bottom: 20px;
             outline: none;
-            border-radius: 3px;
-            border: 1px solid $logo-red;
+            background-color:black;
+            color:#ffecb3;
+            border-radius: 5px;
+            border: 2px solid $logo-red;
         }
 
         .btn {
-            border: 1px solid $logo-red;
-            color: $logo-red;
+            border: 2px solid $logo-red;
+            color: black;
         }
 
         .btn:hover {
