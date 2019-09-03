@@ -27,16 +27,17 @@ import { SoftService } from './services/soft.service';
 import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
 import { UtilisateurService } from './services/utilisateur.service';
+import { AuthGuard } from './services/auth/auth.guard';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
-  { path: 'dashboard', component: ViewDashboardComponent},
-  { path: 'plats', component: ViewMealComponent},
-  { path: 'desserts', component: ViewDessertComponent},
-  { path: 'alcool', component: ViewAlcoolComponent},
-  { path: 'soft', component: ViewSoftComponent},
-  { path: 'new-user', component: AddUserComponent},
-  { path: 'user', component: ViewUserComponent}
+  { path: 'dashboard', canActivate: [AuthGuard], component: ViewDashboardComponent},
+  { path: 'plats', canActivate: [AuthGuard], component: ViewMealComponent},
+  { path: 'desserts', canActivate: [AuthGuard], component: ViewDessertComponent},
+  { path: 'alcool', canActivate: [AuthGuard], component: ViewAlcoolComponent},
+  { path: 'soft', canActivate: [AuthGuard], component: ViewSoftComponent},
+  { path: 'new-user', canActivate: [AuthGuard], component: AddUserComponent},
+  { path: 'user', canActivate: [AuthGuard], component: ViewUserComponent}
 ];
 
 @NgModule({
@@ -69,7 +70,8 @@ const routes: Routes = [
     SoftService,
     UserFoodService,
     AuthService,
-    UtilisateurService
+    UtilisateurService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
