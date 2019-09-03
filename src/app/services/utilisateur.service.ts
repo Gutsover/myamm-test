@@ -10,7 +10,7 @@ export class UtilisateurService {
         },
         {
             name: 'Jean',
-            role: 'user',
+            role: 'agent',
             password: '5678'
         }
     ];
