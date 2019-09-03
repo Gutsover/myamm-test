@@ -7,6 +7,11 @@ export class UtilisateurService {
             name: 'John',
             role: 'admin',
             password: '1234'
+        },
+        {
+            name: 'Jean',
+            role: 'user',
+            password: '5678'
         }
     ];
     utilisateurSubject = new Subject<Utilisateur[]>();
@@ -19,4 +24,5 @@ export class UtilisateurService {
         this.utilisateurs.push(utilisateur);
         this.emitUtilisateurs();
     }
+    
 }
