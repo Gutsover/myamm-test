@@ -12,9 +12,9 @@
   </header>
 
   <div class="container-form">
-    <form action="" type="post">
-      <input type="text" placeholder="nom" />
-      <input type="password" placeholder="password" />
+    <form type="post">
+      <input type="text" placeholder="nom" required/>
+      <input type="password" placeholder="password" required/>
 
       <button type="submit" class="btn" *ngIf="!authStatus" (click)="onSignIn()">Se connecter</button>
     </form>

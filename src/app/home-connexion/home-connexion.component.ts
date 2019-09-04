@@ -11,7 +11,9 @@ export class HomeConnexionComponent implements OnInit {
 
   authStatus: boolean;
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService,
+              // private authGuard: AuthGuard,
+              private router: Router) { }
 
   ngOnInit() {
     this.authStatus = this.authService.isAuth;
