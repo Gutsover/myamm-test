@@ -3,14 +3,14 @@ $rougeCerise: #bb0b0b;
 .card {
     text-align: center;
     margin: 3%;
-    height: 100px;
-    width: 150px;
+    height: 157px;
+    width: 157px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 1px solid $rougeCerise;
-    border-radius: 5px; 
+    border: 2px solid $rougeCerise;
+    border-radius: 50%; 
     background-color: #ffecb3;
 }
 
@@ -18,5 +18,6 @@ $rougeCerise: #bb0b0b;
     display: flex;
     justify-content: space-around;
     border: 2px solid $rougeCerise;
+    border-radius: 50%; 
     background-color: #ffecb3;
 }
