@@ -7,6 +7,9 @@
     <li *ngFor="let utilisateur of utilisateurs">
       <p class="userName">{{ utilisateur.name }}</p>
       <p class="role">{{ utilisateur.role }} </p>
+      <button type="reset" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </li>
   </ul>
 
