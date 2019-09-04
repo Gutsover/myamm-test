@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
+
+.container {
+    padding: 3%;
+
+    h2, h3 {
+        text-align: center;
+        font-family: 'Condiment', cursive;
+        color: whitesmoke;
+    }
+    
+    img {
+        margin: auto;
+        width: 300px;
+        // height: auto;
+    }
+}

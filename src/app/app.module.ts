@@ -20,6 +20,7 @@ import { ViewUserComponent } from './layout/view-user/view-user.component';
 import { ModalCardComponent } from './user/modal-card/modal-card.component';
 import { CreateUserCardComponent } from './admin/create-user-card/create-user-card.component';
 import { AddUserComponent } from './layout/add-user/add-user.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 
 // Import des Services:
 import { MealService } from './services/meal.service';
@@ -40,6 +41,8 @@ const routes: Routes = [
   { path: 'soft', component: ViewSoftComponent},
   { path: 'new-user', component: AddUserComponent},
   { path: 'user', component: ViewUserComponent},
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' },
   { path: 'test', component: FoodTestComponent}
 
 ];
@@ -59,7 +62,8 @@ const routes: Routes = [
     ModalCardComponent,
     CreateUserCardComponent,
     AddUserComponent,
-    FoodTestComponent
+    FoodTestComponent,
+    FourOhFourComponent
   ],
   imports: [
     BrowserModule,
