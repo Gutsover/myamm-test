@@ -25,7 +25,7 @@ export class UserFoodService {
             type: 'Bière'
         },
         {
-            type: 'Coktail'
+            type: 'Cocktail'
         },
         {
             type: 'Vin'
@@ -37,7 +37,7 @@ export class UserFoodService {
             type: 'Boisson sans Alcool'
         },
         {
-            type: 'Coktail sans Alcool'
+            type: 'Cocktail sans Alcool'
         },
     ];
 

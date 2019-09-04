@@ -42,3 +42,21 @@ select {
     display: flex;
     justify-content: space-evenly;
 }
+
+.btn-secondary {
+    background-color: #340027 !important; 
+    color: white !important;    
+    border-bottom-color: #41002F !important;
+    border-top-color: #41002F !important;
+    border-right-color: #41002F !important;
+    border-left-color: #41002F !important;
+}
+
+.btn-light {
+    background-color: #C50000 !important; 
+    color: white !important;
+    border-bottom-color: #120000 !important;
+    border-top-color: #120000 !important;
+    border-right-color: #120000 !important;
+    border-left-color: #120000 !important; 
+}

@@ -34,9 +34,12 @@
         <div class="price-meal">
             <p *ngFor="let price of prices">{{ price }} €
 
-                <!-- btn de suppression d'un item (ne fonctionne pas encore) -->
+                <!-- btn de suppression d'un item (ne fonctionne pas encore) 
                 <button class="btn btn-danger" style="height: 1.3em; width:1.3em;" type="submit" >
                     x
+                </button>-->
+                <button type="reset" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </p>
         </div>
