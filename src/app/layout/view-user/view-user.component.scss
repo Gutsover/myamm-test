@@ -7,10 +7,15 @@
 }
 
 label {
-    color: white;
+    //color: #bb0b0b;
+    color: #ffecb3;
     font-size: 1.3em;
+    display: inline;
+    //margin-right: 2%;
+    //margin-left: 4%;
+    //margin-bottom: 4%;
+    //margin-top: 4%;
 }
-
 
 option {
     font-size: 1.5em;
@@ -19,18 +24,39 @@ option {
 .select-table-couvert {
     display: flex;
     justify-content: space-between;
+    /* centre:
+    justify-content: space-evenly;*/
 
-    .table, .couvert {
+    /*.table, .couvert {
         display: flex;
-    }
+    }*/   
+}
 
-    .mySelect {
-        width: 35px;
-        height: 35px;
-    }
+select {    
+    color: #ffecb3;
+    font-weight: bold;
+    background-color: #890033;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+.btn-secondary {
+    background-color: #340027 !important; 
+    color: white !important;    
+    border-bottom-color: #41002F !important;
+    border-top-color: #41002F !important;
+    border-right-color: #41002F !important;
+    border-left-color: #41002F !important;
+}
+
+.btn-light {
+    background-color: #C50000 !important; 
+    color: white !important;
+    border-bottom-color: #120000 !important;
+    border-top-color: #120000 !important;
+    border-right-color: #120000 !important;
+    border-left-color: #120000 !important; 
 }
