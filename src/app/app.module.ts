@@ -44,12 +44,9 @@ const routes: Routes = [
   { path: 'soft', component: ViewSoftComponent},
   { path: 'new-user', component: AddUserComponent},
   { path: 'user', component: ViewUserComponent},
-<<<<<<< HEAD
-=======
   { path: 'profil', component: UpdateProfilComponent},
   { path: 'not-found', component: FourOhFourComponent },
   { path: '**', redirectTo: 'not-found' },
->>>>>>> 950c6145e7c957e34ebf5a63d5c9ace006ccf250
   { path: 'test', component: FoodTestComponent}
 
 ];
