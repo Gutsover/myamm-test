@@ -4,11 +4,11 @@
   <a routerLink="/new-user" routerLinkActive="active"> Ajouter un nouvel utilisateur</a>
   <hr>
   <ul class="list-group">
-    <li *ngFor="let utilisateur of utilisateurs">
+    <li class="userList" *ngFor="let utilisateur of utilisateurs">
       <p class="userName">{{ utilisateur.name }}</p>
       <p class="role">{{ utilisateur.role }} </p>
-      <button type="reset" class="close" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
+      <button class="deleteUser" type="reset" class="close" aria-label="Close">
+        X
       </button>
     </li>
   </ul>

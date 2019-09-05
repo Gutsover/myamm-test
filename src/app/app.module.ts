@@ -20,6 +20,8 @@ import { ViewUserComponent } from './layout/view-user/view-user.component';
 import { ModalCardComponent } from './user/modal-card/modal-card.component';
 import { CreateUserCardComponent } from './admin/create-user-card/create-user-card.component';
 import { AddUserComponent } from './layout/add-user/add-user.component';
+import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
+
 
 // Import des Services:
 import { MealService } from './services/meal.service';
@@ -30,6 +32,7 @@ import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
 import { UtilisateurService } from './services/utilisateur.service';
 import { FoodService } from './services/food.service';
+import { ProfilCardComponent } from './admin/profil-card/profil-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -59,7 +62,9 @@ const routes: Routes = [
     ModalCardComponent,
     CreateUserCardComponent,
     AddUserComponent,
-    FoodTestComponent
+    FoodTestComponent,
+    FourOhFourComponent,
+    ProfilCardComponent
   ],
   imports: [
     BrowserModule,

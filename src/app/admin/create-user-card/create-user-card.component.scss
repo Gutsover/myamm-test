@@ -1,3 +1,5 @@
+$rougeCerise: #bb0b0b;
+
 .card {
     width: 360px;
     //background-color: #bb0b0b;
@@ -19,16 +21,20 @@
         background-color: #120000;
     }
 
-    li {
+    // USER LIST 
+
+    .userList {
         display: flex;
-        justify-content: space-around;
+        // justify-content: space-around;
     }
 
-    .close {
-        background-color: #bb0b0b;
-        color: #120000;
-        border-radius: 2px solid #120000;
-        //width: 2%;
-        //height: 2%;
+    p {
+        margin: auto;
+    }
+
+    button {
+        margin: auto;
+        color: $rougeCerise;
+        outline: none;
     }
 }

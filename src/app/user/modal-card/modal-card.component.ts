@@ -20,10 +20,10 @@ export class ModalCardComponent implements OnInit {
     this.numberMeal = this.numberMeal + 1;
   }
 
-  less() {
+  less() {   
     if (this.numberMeal > 0) {
       this.numberMeal = this.numberMeal - 1;
-    };    
+    };
   }
 
 }

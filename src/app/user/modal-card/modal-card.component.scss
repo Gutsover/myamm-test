@@ -14,47 +14,18 @@ $rougeCerise: #bb0b0b;
     background-color: #ffecb3;
 }
 
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+.closeModal {
+    color: $rougeCerise;
+    font-size: 1.4em;
+}
+
 .modal-content {
-    background-color: #C50000;
-    color: #ffecb3;
-
-    .close {
-        background-color: #bb0b0b;
-        color: #120000;
-    }
-
-    .modal-body {
-        display: flex;
-        justify-content: space-around;
-        border: 2px solid $rougeCerise;
-        border-radius: 1px;
-        background-color: #120000;
-        
-        .more {
-            background-color: #C50000;
-            color:#ffecb3;
-            font-weight: bold;
-        }
-        
-        .less {
-            background-color: #C50000;
-            color: #ffecb3;
-            font-weight: bold;
-        }
-
-    }
-
-    .modal-footer {
-        display: flex;
-        justify-content: space-around;
-        border: 2px solid $rougeCerise;
-        border-radius: 1px;
-        background-color: #120000;
-        
-        textarea {
-            background-color: #ffecb3;
-            border-radius: 5px;
-        }
-    }
-
+    background-color: #363636;
+    border: 1px solid black;
 }

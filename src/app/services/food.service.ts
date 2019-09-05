@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Food } from '../models/Food.model';
 
-const BASE_URL = 'http://127.0.0.1:4200/test';
+const BASE_URL = 'http://127.0.0.1:8000';
 
 @Injectable({
   providedIn: 'root'
