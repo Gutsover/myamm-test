@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, NgForm} from '@angular/forms';
+import { FormGroup, NgForm, FormControl} from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,20 +9,22 @@ import { Router } from '@angular/router';
 })
 export class UpdateProfilComponent implements OnInit {
 
-  profilForm: FormGroup;
+  // profilForm: new FormGroup({
+  //   userName: new FormControl('');
+  // })
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-  submitProfilForm(profilForm: NgForm) {
-    console.log(profilForm);
-  }
+  // submitProfilForm(profilForm: NgForm) {
+  //   console.log(profilForm);
+  // }
 
-  updateProfilForm(profilForm: NgForm) {
-    profilForm.resetForm();
-    this.router.navigate(['/dashboard']);
-  }
+  // updateProfilForm(profilForm: NgForm) {
+  //   profilForm.resetForm();
+  //   this.router.navigate(['/dashboard']);
+  // }
 
 }
