@@ -26,15 +26,15 @@
       </button>
       <div class="modal-body">
       
-      <h5>Cassolette de Saint-Jacques</h5>
+        <h5>Cassolette de Saint-Jacques</h5>
 <!-- <h5>Cassolette de Saint-Jacques</h5> -->
   
         <div class="lessOrMore">
-          <a class="more"> + </a>
+          <button class="more" (click)="more()"> + </button>
 
-          <span>0</span>
+          <span> {{ numberMeal }}</span>
 
-          <a class="less"> - </a>
+          <button class="less" (click)="less()"> - </button>
         </div>
       </div>
 

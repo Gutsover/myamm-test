@@ -1,5 +1,7 @@
 .card {
     width: 360px;
+    //background-color: #bb0b0b;
+    border-color: 2px solid #120000;
 
     h3 {
         text-align: center;
@@ -14,6 +16,7 @@
     a:hover {
         color: #AA0023;
         font-weight: bold;
+        background-color: #120000;
     }
 
     li {
@@ -23,5 +26,9 @@
 
     .close {
         background-color: #bb0b0b;
+        color: #120000;
+        border-radius: 2px solid #120000;
+        //width: 2%;
+        //height: 2%;
     }
 }

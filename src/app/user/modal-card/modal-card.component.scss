@@ -28,7 +28,20 @@ $rougeCerise: #bb0b0b;
         justify-content: space-around;
         border: 2px solid $rougeCerise;
         border-radius: 1px;
-        background-color: #120000;        
+        background-color: #120000;
+        
+        .more {
+            background-color: #C50000;
+            color:#ffecb3;
+            font-weight: bold;
+        }
+        
+        .less {
+            background-color: #C50000;
+            color: #ffecb3;
+            font-weight: bold;
+        }
+
     }
 
     .modal-footer {
@@ -40,7 +53,7 @@ $rougeCerise: #bb0b0b;
         
         textarea {
             background-color: #ffecb3;
-            border-radius: 1px;
+            border-radius: 5px;
         }
     }
 
