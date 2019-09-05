@@ -28,7 +28,6 @@ $border: #636e72;
             }
     }
 
-
     section {
         margin: auto;
     }
@@ -40,11 +39,13 @@ $border: #636e72;
         p {
             margin-bottom: 0px;
             color: $white;
-            font-size:1.3em;
+            font-size:1.1em;
         }
     }
 
     .close {
-        background-color: #bb0b0b;
+        span {
+            color: $rougeCerise;
+        }
     }
 }
