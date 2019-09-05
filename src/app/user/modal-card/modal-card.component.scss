@@ -17,5 +17,15 @@ $rougeCerise: #bb0b0b;
 .modal-body {
     display: flex;
     justify-content: space-around;
-    background-color: #ffecb3;
+    color: whitesmoke;
+}
+
+.closeModal {
+    color: $rougeCerise;
+    font-size: 1.4em;
+}
+
+.modal-content {
+    background-color: #363636;
+    border: 1px solid black;
 }
