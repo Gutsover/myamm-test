@@ -36,11 +36,11 @@
 
 
         <div class="lessOrMore">
-          <a class="more"> + </a>
+          <button class="less" (click)="less()"> - </button>
 
-          <span>0</span>
+          <span> {{ numberMeal }} </span>
 
-          <a class="less"> - </a>
+          <button class="more" (click)="more()"> + </button>
         </div>
       </div>
 
