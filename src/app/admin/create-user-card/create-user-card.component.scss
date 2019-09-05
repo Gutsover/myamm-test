@@ -1,3 +1,5 @@
+$rougeCerise: #bb0b0b;
+
 .card {
     width: 360px;
 
@@ -16,12 +18,20 @@
         font-weight: bold;
     }
 
-    li {
+    // USER LIST 
+
+    .userList {
         display: flex;
-        justify-content: space-around;
+        // justify-content: space-around;
     }
 
-    .close {
-        background-color: #bb0b0b;
+    p {
+        margin: auto;
+    }
+
+    button {
+        margin: auto;
+        color: $rougeCerise;
+        outline: none;
     }
 }
