@@ -14,13 +14,34 @@ $rougeCerise: #bb0b0b;
     background-color: #ffecb3;
 }
 
-.modal-body {
-    display: flex;
-    justify-content: space-around;
-<<<<<<< HEAD
-    border: 2px solid $rougeCerise;
-    border-radius: 50%; 
-=======
->>>>>>> copy-master
-    background-color: #ffecb3;
+.modal-content {
+    background-color: #C50000;
+    color: #ffecb3;
+
+    .close {
+        background-color: #bb0b0b;
+        color: #120000;
+    }
+
+    .modal-body {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid $rougeCerise;
+        border-radius: 1px;
+        background-color: #120000;        
+    }
+
+    .modal-footer {
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid $rougeCerise;
+        border-radius: 1px;
+        background-color: #120000;
+        
+        textarea {
+            background-color: #ffecb3;
+            border-radius: 1px;
+        }
+    }
+
 }
