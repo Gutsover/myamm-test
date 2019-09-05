@@ -1,9 +1,11 @@
 <div class="card profil">
     <h3>Profil</h3>
+    <hr>
     <div class="card-body">
         <p>Identifiant: {{ userName }}</p>
         <p>Email: {{ userMail }}</p>
+        <p>Nombre de tables: {{ numberTable }}</p>
 
-        <button class="update">Mettre à jour</button>
+        <button routerLink="/profil" routerLinkActive="active" class="update">Mettre à jour</button>
     </div>
 </div>

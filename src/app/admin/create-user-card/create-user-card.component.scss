@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
+
 $rougeCerise: #bb0b0b;
 
 .card {
     width: 360px;
+<<<<<<< HEAD
     //background-color: #bb0b0b;
     border-color: 2px solid #120000;
+=======
+    padding: 10px;
+    background-color: #bdc3c7;
+>>>>>>> 950c6145e7c957e34ebf5a63d5c9ace006ccf250
 
     h3 {
         text-align: center;
+        color: #340027;
+        font-family: 'Condiment', cursive;
     }
 
     a {

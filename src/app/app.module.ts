@@ -21,6 +21,8 @@ import { ModalCardComponent } from './user/modal-card/modal-card.component';
 import { CreateUserCardComponent } from './admin/create-user-card/create-user-card.component';
 import { AddUserComponent } from './layout/add-user/add-user.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
+import { ProfilCardComponent } from './admin/profil-card/profil-card.component';
+import { UpdateProfilComponent } from './layout/update-profil/update-profil.component';
 
 
 // Import des Services:
@@ -32,7 +34,6 @@ import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
 import { UtilisateurService } from './services/utilisateur.service';
 import { FoodService } from './services/food.service';
-import { ProfilCardComponent } from './admin/profil-card/profil-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -43,6 +44,12 @@ const routes: Routes = [
   { path: 'soft', component: ViewSoftComponent},
   { path: 'new-user', component: AddUserComponent},
   { path: 'user', component: ViewUserComponent},
+<<<<<<< HEAD
+=======
+  { path: 'profil', component: UpdateProfilComponent},
+  { path: 'not-found', component: FourOhFourComponent },
+  { path: '**', redirectTo: 'not-found' },
+>>>>>>> 950c6145e7c957e34ebf5a63d5c9ace006ccf250
   { path: 'test', component: FoodTestComponent}
 
 ];
@@ -64,7 +71,8 @@ const routes: Routes = [
     AddUserComponent,
     FoodTestComponent,
     FourOhFourComponent,
-    ProfilCardComponent
+    ProfilCardComponent,
+    UpdateProfilComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
+
 .card {
     width: 360px;
     padding: 10px;
+    background-color: #bdc3c7;
 
     h3 {
         text-align: center;
+        color: #340027;
+        font-family: 'Condiment', cursive;
     }
 
 }
