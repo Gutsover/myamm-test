@@ -4,7 +4,7 @@
     <!-- Le Header rassemble le H3 appelé dans le ts et le btn de validation des input qui suivront -->
     <header class="header-card padd">
         <h3>{{ mealType }}</h3>
-         <button type="submit" class="btn btn-light validate" value="Ajouter" (click)="addItem()" [disabled]="!(mealName && mealPrice)">Ajouter</button>
+         <button type="submit" class="btn validate" value="Ajouter" (click)="addItem()" [disabled]="!(mealName && mealPrice)">Ajouter</button>
     </header>
 
     <!-- La class "padd" est just pour le css, indique un padding de 15px -->

@@ -4,11 +4,24 @@
     width: 360px;
     padding: 10px;
     background-color: #bdc3c7;
+    border: 1px solid #340027;
 
     h3 {
         text-align: center;
         color: #340027;
         font-family: 'Condiment', cursive;
+    }
+
+    .update {         
+        border: 1px solid #340027;
+        border-radius: 5px;
+        background-color: #ffecb3;
+        color:  #340027;
+    }
+
+    .update:hover {
+        background-color:#340027;
+        color: #ffecb3;
     }
 
 }
