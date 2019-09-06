@@ -11,13 +11,13 @@ $border: #120000;
 .card {
     width: 380px;
     //background-color: #272727;
-    //background-color: #2A0015;
-    background-color: #120000;
-    //background-color: #bb0b0b;
-    //background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23424242' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: #313131;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23424242' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    //background-color: #bdc3c7;
+    //background-color: #120000;
     margin: 3%;
-    border: 1px solid $rougeCerise;
-    //overflow: hidden;
+    border: 2px solid #340027;
+    overflow: hidden;
 
     header {
         display: flex;
@@ -25,21 +25,22 @@ $border: #120000;
         align-items: center;
         h3 {
             text-align: center;
-            //color: #340027;
-            color: $rougeCerise;
+            color: #820023;
             //color:#120000;
             font-family: 'Condiment', cursive;
+            text-shadow: 2px 2px 3px black;
         }
             .validate {                
                 //border: 1px solid #120000;
-                border: 1px solid $rougeCerise;
+                border: 1px solid #820023;
                 border-radius: 5px;
-                background-color: #424242;
-                color: $white;
+                //background-color: #424242;
+                background-color: black;
+                color: #e0e0e0;
             }
         
             .validate:hover {
-                background-color:black;
+                background-color:#820023;
                 color: $white;
             }
             
