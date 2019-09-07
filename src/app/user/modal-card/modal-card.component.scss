@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
+
 $rougeCerise: #bb0b0b;
 
 .card {
     text-align: center;
     margin: 3%;
-    height: 157px;
-    width: 157px;
+    height: 160px;
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 2px solid $rougeCerise;
+    border: 2px solid #820023;
     border-radius: 50%; 
-    background-color: #ffecb3;
+    background-color: #e0e0e0;
+    color: #340027;
+    font-family: 'Condiment', cursive; 
+      
+    h4 {
+        font-size: xx-large;
+    }
 }
+
 
 .modal-body {
     display: flex;

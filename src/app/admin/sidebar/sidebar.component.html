@@ -98,8 +98,10 @@
         ></path>
       </svg>
     </a>
+    <hr>
+    <button class="btn fixed" *ngIf="authStatus" (click)="onSignOut()">Se déconnecter</button>
   </div>
-
-  <button class="btn btn-danger fixed-bottom" *ngIf="authStatus" (click)="onSignOut()">Se déconnecter</button>
+  
+ <!--<button class="btn btn-danger fixed-bottom" *ngIf="authStatus" (click)="onSignOut()">Se déconnecter</button>-->
 
 </nav>
