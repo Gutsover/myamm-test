@@ -4,14 +4,14 @@
       <label class="modif" for="name"> 
         Identifiant 
       </label>
-      <input type="text" class="form-control" id="name" formControlName="name">
+      <input type="text" class="form-control" id="name" formControlName="name" required>
     </div>
 
     <div class="form-group">
       <label class="modif" for="role"> 
         Rôle 
       </label>
-      <select class="form-control" id="role" formControlName="role">
+      <select class="form-control" id="role" formControlName="role" required>
         <option value="admin">admin</option>
         <option value="agent">agent</option>
       </select>
@@ -21,7 +21,7 @@
       <label class="modif" for="password">
         Mot de Passe 
       </label>
-      <input type="text" class="form-control" id="password" formControlName="password">
+      <input type="text" class="form-control" id="password" formControlName="password" required>
     </div>
 
     <button type="submit" class="btn btn-light" [disabled]="utilisateurForm.invalid">Créer</button>
