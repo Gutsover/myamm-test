@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
+
 $logo-red: #bb0b0b;
 $body: #2d3436;
 $myWhite:#ffffff;
@@ -5,6 +7,13 @@ $sidebar: #ffecb3;
 
 header {
     padding: 15px;
+
+    h2 {
+        font-family: 'Condiment', cursive;
+        color: $logo-red;
+        text-shadow: 3px 3px 3px $body;
+        margin: 3%;
+    }
 }
 
 .container-form {
