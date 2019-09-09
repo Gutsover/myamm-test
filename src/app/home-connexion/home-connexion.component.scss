@@ -11,13 +11,13 @@ header {
     h2 {
         font-family: 'Condiment', cursive;
         color: $logo-red;
-        text-shadow: 3px 3px 3px $body;
-        margin: 3%;
+        text-shadow: 3px 3px 3px black;
+        margin: 1%;
     }
 }
 
 .container-form {
-    margin-top: 20px;
+    // margin-top: 2%;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -40,7 +40,7 @@ header {
 
         .btn {
             border: 2px solid $logo-red;
-            color: black;
+            color: $myWhite;
         }
 
         .btn:hover {
@@ -55,11 +55,9 @@ app-sidenav {
     display: none;
 }
 
-
 //////////////////////////////
 /////@ LANDSCAPE /////////////
 /////////////////////////////
-
 
 @media (min-width: 300px) and (max-width: 1024px) and (orientation: landscape) {
     .container-homepage {
@@ -68,4 +66,3 @@ app-sidenav {
         align-items: center;
     }
 }
-
