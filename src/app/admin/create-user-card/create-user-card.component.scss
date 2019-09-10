@@ -42,4 +42,17 @@ $rougeCerise: #bb0b0b;
         color: $rougeCerise;
         outline: none;
     }
+
+    .addUser {         
+        border: 1px solid #340027;
+        border-radius: 5px;
+        background-color:#e0e0e0;
+        color:  #340027;
+    }
+
+    .addUser:hover {
+        background-color:#340027;
+        color:  #e0e0e0;
+    }
+
 }

@@ -1,7 +1,7 @@
 <div class="card">
   <h3>Utilisateurs</h3>
   <hr>
-  <a routerLink="/new-user" routerLinkActive="active"> Ajouter un nouvel utilisateur</a>
+  <button routerLink="/new-user" routerLinkActive="active" class="addUser"> Ajouter un nouvel utilisateur</button>
   <hr>
   <ul class="list-group">
     <li class="userList" *ngFor="let utilisateur of utilisateurs">

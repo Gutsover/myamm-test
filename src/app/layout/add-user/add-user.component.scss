@@ -1,16 +1,26 @@
-.formGroup {
-    .input {
-        width: 20%;
+.container {
+    margin-top: 5%;
+
+    .formGroup {
+        .input {
+            width: 20%;
+            
+        }
     }
-}
-
-
-.btn-light {
-    background-color: #820023 !important; 
-    color: white !important;
-    border-bottom-color: #1e0003 !important;
-    border-top-color: #1e0003 !important;
-    border-right-color: #1e0003 !important;
-    border-left-color: #1e0003 !important; 
+    
+    .modif {
+        color: white;    
+        font-size: 1.0em;
+    }
+    
+    .btn-light {
+        background-color: #820023 !important; 
+        color: white !important;
+        border-bottom-color: #1e0003 !important;
+        border-top-color: #1e0003 !important;
+        border-right-color: #1e0003 !important;
+        border-left-color: #1e0003 !important; 
+    }
+    
 }
 
