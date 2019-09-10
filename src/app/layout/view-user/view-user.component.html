@@ -248,12 +248,13 @@
   <hr>
 
   <div class="buttons fixed">       
-    <button class="btn btn-light" value="Valider">Valider la Commande</button>
-    <!-- bien pour version ordi
-      <button class="btn btn-outline-light" value="Valider">Valider la Commande</button>-->
     <button class="btn btn-secondary" value="Résumé">Résumé de la Commande</button>
     <!-- bien pour version ordi
       <button class="btn btn-outline-warning" value="Résumé">Résumé de la Commande</button>-->
+    <button class="btn btn-light" value="Valider">Valider la Commande</button>
+    <!-- bien pour version ordi
+      <button class="btn btn-outline-light" value="Valider">Valider la Commande</button>-->
+    <button class="btn fixed" *ngIf="authStatus" (click)="onSignOut()">Se déconnecter</button>
   </div>
 
 </div>

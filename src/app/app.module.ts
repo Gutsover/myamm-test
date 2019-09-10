@@ -34,6 +34,7 @@ import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
 import { UtilisateurService } from './services/utilisateur.service';
 import { FoodService } from './services/food.service';
+import { RecetteCardComponent } from './admin/recette-card/recette-card.component';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -69,7 +70,8 @@ const routes: Routes = [
     FoodTestComponent,
     FourOhFourComponent,
     ProfilCardComponent,
-    UpdateProfilComponent
+    UpdateProfilComponent,
+    RecetteCardComponent
   ],
   imports: [
     BrowserModule,
