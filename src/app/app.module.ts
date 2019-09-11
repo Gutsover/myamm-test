@@ -23,7 +23,7 @@ import { AddUserComponent } from './layout/add-user/add-user.component';
 import { FourOhFourComponent } from './four-oh-four/four-oh-four.component';
 import { ProfilCardComponent } from './admin/profil-card/profil-card.component';
 import { UpdateProfilComponent } from './layout/update-profil/update-profil.component';
-
+import { RecetteCardComponent } from './admin/recette-card/recette-card.component';
 
 // Import des Services:
 import { MealService } from './services/meal.service';
@@ -34,7 +34,7 @@ import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
 import { UtilisateurService } from './services/utilisateur.service';
 import { FoodService } from './services/food.service';
-import { RecetteCardComponent } from './admin/recette-card/recette-card.component';
+import { OfficialMealService } from './services/official-meal.service';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -89,7 +89,8 @@ const routes: Routes = [
     UserFoodService,
     AuthService,
     UtilisateurService,
-    FoodService
+    FoodService,
+    OfficialMealService
   ],
   bootstrap: [AppComponent]
 })
