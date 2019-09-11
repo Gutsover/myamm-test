@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MealService } from 'src/app/services/meal.service';
-import { OfficialMealService } from 'src/app/services/official-meal.service';
 
 @Component({
   selector: 'app-meal-card',
@@ -21,8 +20,7 @@ export class MealCardComponent implements OnInit {
 
   // @Input() indexOfMeal: number;
 
-  constructor(private mealService: MealService, 
-              private officialMealService: OfficialMealService) { }
+  constructor(private mealService: MealService) { }
 
   ngOnInit() {
 

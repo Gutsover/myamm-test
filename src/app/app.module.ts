@@ -34,7 +34,6 @@ import { UserFoodService } from './services/user-food.service';
 import { AuthService } from './services/auth.service';
 import { UtilisateurService } from './services/utilisateur.service';
 import { FoodService } from './services/food.service';
-import { OfficialMealService } from './services/official-meal.service';
 
 const routes: Routes = [
   { path: '', component: HomeConnexionComponent},
@@ -89,8 +88,7 @@ const routes: Routes = [
     UserFoodService,
     AuthService,
     UtilisateurService,
-    FoodService,
-    OfficialMealService
+    FoodService
   ],
   bootstrap: [AppComponent]
 })
