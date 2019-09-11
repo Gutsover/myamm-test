@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
-
-$logo-red: #bb0b0b;
-$body: #2d3436;
-$myWhite:#ffffff;
-$sidebar: #ffecb3;
+@import '../../../styles.scss';
 
 nav {
     width: 13%;
@@ -13,7 +8,7 @@ nav {
     left: 0;
     padding-top: 20px;
     background-color: black;
-    border-right: 2px solid $logo-red;
+    border-right: 2px solid $rougeCerise;
     display: flex;
     flex-direction: column;
 
@@ -32,14 +27,17 @@ nav {
             transform: rotate(-10deg);
 
             .colored-letter {
-                color: $logo-red;
+                color:
+                
+ $rougeCerise;
             }
         }
 
         .line {
             width: 100%;
             height: 2px;
-            background-color: $logo-red;
+            background-color:
+             $rougeCerise;
             transform: rotate(-10deg);
         }
     }
@@ -67,23 +65,29 @@ nav {
         }
 
         a:hover {
-            color: $logo-red;
+            color:
+             $rougeCerise;
             svg path {
-                fill: $logo-red;
+                fill:
+
+ $rougeCerise;
             }
         }
         .active {
-            color: $logo-red;
+            color:
+             $rougeCerise;
         }
     }
 
     .btn {
-        border: 2px solid $logo-red;
+        border: 2px solid
+     $rougeCerise;
         color: $myWhite;
     }
 
     .btn:hover {
-        background-color: $logo-red;
+        background-color:
+     $rougeCerise;
         color: $myWhite;
     }
 }
@@ -122,7 +126,8 @@ nav {
 @media (min-width: 300px) and (max-width: 1024px) {
     nav {
         align-items: center;
-        border-right: 1px solid $logo-red;
+        border-right: 1px solid
+     $rougeCerise;
 
         header {
             font-size: 1rem;

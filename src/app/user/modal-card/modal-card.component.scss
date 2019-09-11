@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
-
-$rougeCerise: #bb0b0b;
+@import '../../../styles.scss';
 
 .card {
     text-align: center;
@@ -15,7 +13,7 @@ $rougeCerise: #bb0b0b;
     border-radius: 50%; 
     background-color: #e0e0e0;
     color: #340027;
-    font-family: 'Condiment', cursive; 
+    font-family: 'Cookie', cursive; 
       
     h4 {
         font-size: xx-large;

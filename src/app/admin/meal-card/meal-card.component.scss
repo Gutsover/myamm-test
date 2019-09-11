@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
+@import '../../../styles.scss';
 
-$rougeCerise: #bb0b0b;
-$white: #ffffff;
-$border: #120000;
 
 .padd {
     padding: 15px;
@@ -39,7 +36,7 @@ $border: #120000;
 
         .validate:hover {
             background-color:#820023;
-            color: $white;
+            color: $myWhite;
         }
 
     }
@@ -54,7 +51,7 @@ $border: #120000;
 
         p {
             margin-bottom: 0px;
-            color: $white;
+            color: $myWhite;
             font-size:1.1em;
         }
     }
