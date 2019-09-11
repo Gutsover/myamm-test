@@ -14,11 +14,11 @@
   </header>
 
   <div class="container-form">
-    <form type="post">
-      <input type="text" placeholder="Identifiant" required/>
-      <input type="password" placeholder="password" required/>
+    <div class="form">
+      <input type="text" placeholder="Identifiant" required [(ngModel)]="formUser.name"/>
+      <input type="password" placeholder="password" required [(ngModel)]="formUser.password"/>
 
       <button type="submit" class="btn" *ngIf="!authStatus" (click)="onSignIn()">Se connecter</button>
-    </form>
+    </div>
   </div>
 </div>

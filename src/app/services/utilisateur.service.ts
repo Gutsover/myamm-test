@@ -35,8 +35,18 @@ export class UtilisateurService {
         this.emitUtilisateurs();
     }
 
-    deleteUtilisateur(): Observable<Utilisateur[]> {
-        return this.http.delete<Utilisateur[]>('http://localhost:8000/meals');            
-     }
-    
+    deleteUtilisateur(utilisateur: Utilisateur) {
+        const pos = this.utilisateurs.findIndex(x => x.id === utilisateur.id);
+        this.utilisateurs.splice(pos, 1);
+        this.utilisateurSubject.next(this.utilisateurs);
+    }
+
+    authenticate(userName: string, pass: string): Utilisateur {
+        return this.utilisateurs.find((utilisateur: Utilisateur) => {
+            if (userName === utilisateur.name && pass === utilisateur.password) {
+                return utilisateur;
+            }
+            return null;
+        });
+    }
 }

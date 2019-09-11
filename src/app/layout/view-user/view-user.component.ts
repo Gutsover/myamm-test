@@ -18,12 +18,12 @@ export class ViewUserComponent implements OnInit {
 
   ngOnInit() {
     this.foods = this.userFoodService.food;
-    this.authStatus = this.authService.isAuth;
+    // this.authStatus = this.authService.isAuth;
+    this.authStatus = this.authService.isConnected();
   }
 
   onSignOut() {
-    this.authService.signOut();
-    this.authStatus = this.authService.isAuth;
+    this.authService.clear();
     this.router.navigate(['']);
   }
 

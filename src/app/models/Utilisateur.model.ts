@@ -1,9 +1,9 @@
 export class Utilisateur {
 
-    constructor(    
-        public name: string,
-        public role: string,
-        public password: string,
-        public id?: number) {
-    }
+    constructor(
+        public name = '',
+        public role = '',
+        public password = '',
+        public id?: number
+    ) { }
 }

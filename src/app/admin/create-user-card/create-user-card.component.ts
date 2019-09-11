@@ -28,4 +28,9 @@ export class CreateUserCardComponent implements OnInit, OnDestroy {
     this.utilisateurSubscription.unsubscribe();
   }
 
+  onDelete(utilisateur: Utilisateur) {
+    console.log(utilisateur);
+    this.utilisateurService.deleteUtilisateur(utilisateur);
+  }
+
 }

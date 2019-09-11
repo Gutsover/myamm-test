@@ -14,12 +14,12 @@ export class SidebarComponent implements OnInit {
   constructor(private authService: AuthService, private router: Router) { }
 
   ngOnInit() {
-    this.authStatus = this.authService.isAuth;
+    this.authStatus = this.authService.isConnected();
   }
 
   onSignOut() {
-    this.authService.signOut();
-    this.authStatus = this.authService.isAuth;
+    this.authService.clear();
+    // this.authStatus = this.authService.isAuth;
     this.router.navigate(['']);
   }
 

@@ -254,7 +254,7 @@
     <button class="btn btn-light" value="Valider">Valider la Commande</button>
     <!-- bien pour version ordi
       <button class="btn btn-outline-light" value="Valider">Valider la Commande</button>-->
-    <button class="btn fixed" *ngIf="authStatus" (click)="onSignOut()">Se déconnecter</button>
+    <button class="btn btn-danger" value="déconnexion" *ngIf="authStatus" (click)="onSignOut()">Se déconnecter</button>
   </div>
 
 </div>

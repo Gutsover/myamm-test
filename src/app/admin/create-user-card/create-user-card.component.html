@@ -7,7 +7,7 @@
     <li class="userList" *ngFor="let utilisateur of utilisateurs">
       <p class="userName">{{ utilisateur.name }}</p>
       <p class="role">{{ utilisateur.role }} </p>
-      <button class="deleteUser" type="reset" class="close" aria-label="Close">
+      <button class="deleteUser" type="reset" class="close" aria-label="Close" (click)="onDelete(utilisateur)">
         X
       </button>
     </li>
