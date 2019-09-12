@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MealService } from 'src/app/services/meal.service';
-import { OfficialMealService } from 'src/app/services/official-meal.service';
+// import { OfficialMealService } from 'src/app/services/official-meal.service';
+import { MealModel } from '../../models/Meal.model';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-meal-card',
@@ -21,8 +23,7 @@ export class MealCardComponent implements OnInit {
 
   // @Input() indexOfMeal: number;
 
-  constructor(private mealService: MealService, 
-              private officialMealService: OfficialMealService) { }
+  constructor(private mealService: MealService) { }
 
   ngOnInit() {
 
@@ -35,5 +36,11 @@ export class MealCardComponent implements OnInit {
 
     this.prices.push(this.mealPrice);
   }
+
+  // deleteItem(meal: MealModel) {
+  //   const pos = this.meals.findIndex(x => x.id === meal.id);
+  //     this.meals.splice(pos, 1);
+  //     this.mealSubject.next(this.meals);
+  // }
 
 }

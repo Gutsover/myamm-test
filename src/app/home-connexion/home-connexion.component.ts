@@ -25,7 +25,7 @@ export class HomeConnexionComponent implements OnInit {
   onSignIn() {
     this.authService.signIn(this.formUser).then(
       (user: Utilisateur) => {
-        console.log('Sign in successful!');
+        // console.log('Sign in successful!');
 
         // if (this.formUser.role === 'admin') {
         //   this.router.navigate(['dashboard']);

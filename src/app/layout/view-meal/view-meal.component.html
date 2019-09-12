@@ -5,7 +5,7 @@ Sans crochets: appelle les var du fichier .ts -->
 
 <div class="container-page fixed-right">
 
-    <app-meal-card *ngFor="let meal of meals"
+    <app-meal-card *ngFor="let meal of meals; let index = index; let isFirst = first;"
                     [mealType]="meal.type"
                     [mealPlaceHolder]="meal.placeHolder"></app-meal-card>
 
