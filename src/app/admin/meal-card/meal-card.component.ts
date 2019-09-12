@@ -1,8 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MealService } from 'src/app/services/meal.service';
+<<<<<<< HEAD
 // import { OfficialMealService } from 'src/app/services/official-meal.service';
 import { MealModel } from '../../models/Meal.model';
 import { Subject } from 'rxjs';
+=======
+>>>>>>> f0c26836a8132475851006dedb043217c405cba8
 
 @Component({
   selector: 'app-meal-card',

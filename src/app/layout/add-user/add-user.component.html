@@ -1,7 +1,7 @@
 <div class="container">
-  <form [formGroup]="utilisateurForm" (ngSubmit)="onSubmitForm()">
+  <form [formGroup]="utilisateurForm" (ngSubmit)="onSubmitForm()" class="formulaire">
     <div class="form-group">
-      <label class="modif" for="name"> 
+      <label class="modif" for="name">
         Identifiant 
       </label>
       <input type="text" class="form-control" id="name" formControlName="name" required>

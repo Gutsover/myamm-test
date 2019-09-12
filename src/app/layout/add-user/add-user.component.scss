@@ -1,11 +1,15 @@
-.formGroup {
-    .input {
-        width: 20%;
+@import '../../../styles.scss';
+
+.formulaire {
+    margin: auto;
+    width: 70%;
+    label {
+        color: $myWhite;
     }
 }
 
 
-.btn-light {
+.btn {
     background-color: #820023 !important; 
     color: white !important;
     border-bottom-color: #1e0003 !important;

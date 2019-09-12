@@ -1,9 +1,9 @@
 import { Utilisateur } from '../models/Utilisateur.model';
 import { Subject } from 'rxjs';
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+// import { Injectable } from '@angular/core';
+// import { Observable } from 'rxjs';
+// import { map } from 'rxjs/operators';
 
 export class UtilisateurService {
 
@@ -20,7 +20,19 @@ export class UtilisateurService {
             id: 2,
             name: 'Jean',
             role: 'agent',
-            password: '5678'
+            password: '1234'
+        },
+        {
+            id: 3,
+            name: 'Victor',
+            role: 'cuisine',
+            password: '1234'
+        },
+        {
+            id: 4,
+            name: 'Julie',
+            role: 'agent',
+            password: '1234'
         }
     ];
 

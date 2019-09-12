@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Condiment&display=swap');
-
-$rougeCerise: #bb0b0b;
+@import '../../../styles.scss';
 
 .card {
     width: 360px;
@@ -42,4 +40,5 @@ $rougeCerise: #bb0b0b;
         color: $rougeCerise;
         outline: none;
     }
+
 }
